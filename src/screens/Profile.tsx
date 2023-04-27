@@ -146,7 +146,6 @@ export function Profile() {
     } finally {
       setIsUpdatingProfile(false);
     }
-    console.log(updatedUser);
   }
 
   return (

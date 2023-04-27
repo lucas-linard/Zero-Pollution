@@ -1,9 +1,9 @@
 import { Center, VStack, Text, Image } from "native-base";
+
 import { Header } from "@components/Header";
-import Pollution from "@assets/Pollution.png";
-import { Button } from "@components/Button";
 import { useAuth } from "@hooks/useAuth";
-import { storageRecordDelete } from "@storage/storageRecord";
+import Pollution from "@assets/Pollution.png";
+
 export function Home() {
   const { signOut, user } = useAuth();
 

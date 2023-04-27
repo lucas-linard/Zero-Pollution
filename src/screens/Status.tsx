@@ -36,7 +36,7 @@ export function Status() {
         <Center w="full">
           <Image
             alt="Imagem de denuncia"
-            source={RecordSample1}
+            source={{ uri: record.image || RecordSample1 }}
             width={343}
             height={200}
           />

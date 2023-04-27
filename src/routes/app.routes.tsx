@@ -21,13 +21,13 @@ import { Profile } from "@screens/Profile";
 import { useAuth } from "@hooks/useAuth";
 
 type AppRoutes = {
-  home: undefined;
-  records: undefined;
-  newRecord: undefined;
+  Inicio: undefined;
+  Registros: undefined;
+  "Novo registro": undefined;
   status: {
     id: string;
   };
-  profile: undefined;
+  Perfil: undefined;
 };
 
 export type AppNavigationRouteProps = DrawerNavigationProp<AppRoutes>;

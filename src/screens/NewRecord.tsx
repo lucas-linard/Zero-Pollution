@@ -63,6 +63,14 @@ export function NewRecord() {
     try {
       setIsLoading(true);
       const created_at = new Date().toLocaleDateString("pt-BR");
+      if(image.length == 0){
+        return toast.show({
+          title: "Selecione uma imagem",
+          placement: "top",
+          bgColor: "red.500",
+        });
+      }
+
       await storageRecordSave({
         id: uuid.v4(),
         ...form,
@@ -76,7 +84,7 @@ export function NewRecord() {
         bgColor: "green.500",
       });
 
-      navigator.navigate("records");
+      navigator.navigate("Registros");
     } catch (error) {
       toast.show({
         title: "Erro ao salvar o registro. Tente novamente mais tarde.",
