@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "zeroPollution",
-    "slug": "zeroPollution",
+    "name": "Zero Pollution",
+    "slug": "Zero-Pollution",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lalencar.ZeroPollution"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2d068c7a-760a-4a0d-b3d5-cc900202d78e"
+      }
     }
   }
 }
